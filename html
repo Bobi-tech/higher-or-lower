@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Higher or Lower — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Higher or Lower</h1>
+    <div id="score">Score: 0</div>
+
+    <div class="cards">
+      <div class="card" id="cardA">
+        <div class="name" id="nameA">—</div>
+        <div class="value" id="valueA">?</div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="card" id="cardB">
+        <div class="name" id="nameB">—</div>
+        <div class="value" id="valueB">?</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="higherBtn">Higher</button>
+      <button id="lowerBtn">Lower</button>
+    </div>
+
+    <div id="gameOver" class="overlay hidden">
+      <div class="modal">
+        <h2>Game Over</h2>
+        <p id="finalScore">Score: 0</p>
+        <button id="retryBtn">Nochmal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
